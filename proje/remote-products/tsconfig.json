@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",  // veya "ES6"
+    "moduleResolution": "node",
+    "target": "ESNext",  // veya "ES6"
+    "esModuleInterop": true,  // ES modüllerini kullanabilmek için
+    "allowSyntheticDefaultImports": true, // default import kullanabilmek için
+    "skipLibCheck": true, // kütüphane denetimi için
+    "strict": true, // daha sıkı denetim için
+    "resolveJsonModule": true,  // JSON dosyalarını import edebilmek için
+
+    
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+   
+    "noEmit": true,
+  
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
